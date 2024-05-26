@@ -22,6 +22,18 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  let los_angelesElement = document.querySelector("#los_angeles");
+  if (los_angelesElement) {
+    let los_angelesDateElement = los_angelesElement.querySelector(".date");
+    let los_angelesTimeElement = los_angelesElement.querySelector(".time");
+    let los_angelesTime = moment().tz("America/Los_Angeles");
+
+    los_angelesDateElement.innerHTML = los_angelesTime.format("MMMM Do YYYY");
+    los_angelesTimeElement.innerHTML = los_angelesTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
