@@ -60,3 +60,11 @@ footer {
   font-size: 18px;
   color: rgb(55, 56, 61);
 }
+
+h1 a {
+  color: rgb(120, 199, 211);
+}
+
+footer a {
+  color: #000;
+}
